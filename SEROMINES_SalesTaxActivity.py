@@ -1,6 +1,9 @@
-tax = .06
-amount = eval(input("Enter purchase amount: "))
-salestax = float(amount) * float(tax)
+sec = 60
 
-print ("Amount: ", amount)
-print ("Sales tax is,", round(salestax, 2))
+seconds = eval(input("Please input seconds: "))
+convert = seconds / sec
+convert1 = seconds % sec
+
+print("Seconds: ", seconds)
+
+print("The conversion of" , seconds, "seconds is equivalent to", int(convert) , "minutes and", convert1, "seconds.")
